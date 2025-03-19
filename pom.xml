@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.azhag_swe</groupId>
-	<artifactId>tech_tutorial</artifactId>
+	<artifactId>saas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>tech_tutorial</name>
-	<description>Tutorial for technology</description>
+	<name>saas</name>
+	<description>Saas for technology</description>
 	<url />
 	<licenses>
 		<license />
