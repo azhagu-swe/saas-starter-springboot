@@ -8,6 +8,7 @@ public class ErrorCodeConstants {
     public static final String VALIDATION_ERROR = "VALIDATION_001";
     public static final String RESOURCE_NOT_FOUND = "RESOURCE_001";
     public static final String GENERAL_ERROR = "ERROR_001";
+    public static final String ACCESS_DENIED = "AUTH_004";;
 
     // Role error codes
     public static final String ROLE_NOT_FOUND = "ROLE_001";
@@ -26,4 +27,5 @@ public class ErrorCodeConstants {
     public static final String PERMISSION_CREATE_ERROR = "PERMISSION_002";
     public static final String PERMISSION_UPDATE_ERROR = "PERMISSION_003";
     public static final String PERMISSION_DELETE_ERROR = "PERMISSION_004";
+    public static final String METHOD_NOT_ALLOWED = "HTTP405";
 }
