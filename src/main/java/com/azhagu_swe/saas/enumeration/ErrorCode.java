@@ -4,7 +4,7 @@ public enum ErrorCode {
     // Example error codes
     AUTH_INVALID_CREDENTIALS("AUTH001", "Invalid username or password"),
     TOKEN_EXPIRED("AUTH002", "Refresh token has expired. Please sign in again."),
-    TOKEN_NOT_FOUND("AUTH003", "Refresh token is not in database"),
+    TOKEN_NOT_FOUND("AUTH003", "Refresh token is not found. Please sign in again."),
 
     // Validation Errors
     VALIDATION_FAILED("VAL001", "Validation failed"),
