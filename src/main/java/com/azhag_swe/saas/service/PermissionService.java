@@ -5,8 +5,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.azhag_swe.saas.constants.ErrorCodeConstants;
 import com.azhag_swe.saas.dto.request.PermissionRequest;
 import com.azhag_swe.saas.dto.response.PermissionResponse;
 import com.azhag_swe.saas.exception.ResourceNotFoundException;
