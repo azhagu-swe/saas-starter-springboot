@@ -1,8 +1,13 @@
 package com.azhag_swe.saas.constants;
 
 public class ErrorCodeConstants {
-    public static final String USERNAME_TAKEN = "AUTH004";
-    public static final String EMAIL_IN_USE = "AUTH005";
+
+    public static final String USERNAME_TAKEN = "USER_002";
+    public static final String EMAIL_IN_USE = "USER_003";
+    public static final String AUTHENTICATION_FAILED = "AUTH_001";
+    public static final String VALIDATION_ERROR = "VALIDATION_001";
+    public static final String RESOURCE_NOT_FOUND = "RESOURCE_001";
+    public static final String GENERAL_ERROR = "ERROR_001";
 
     // Role error codes
     public static final String ROLE_NOT_FOUND = "ROLE_001";
