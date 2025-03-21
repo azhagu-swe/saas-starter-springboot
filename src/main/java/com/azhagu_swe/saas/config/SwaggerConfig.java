@@ -30,7 +30,7 @@ public class SwaggerConfig {
                                 .components(new Components().addSecuritySchemes("bearerAuth", bearerScheme))
                                 .addSecurityItem(securityRequirement)
                                 .info(new Info()
-                                                .title("Tech Tutorials API")
+                                                .title("Saas Starter API")
                                                 .version("1.0")
                                                 .description("API documentation for the Tech Tutorials application")
                                                 .contact(new Contact()

@@ -111,6 +111,7 @@ public class GlobalExceptionHandler {
             case VALIDATION_FAILED, DUPLICATE_USERNAME, DUPLICATE_EMAIL -> HttpStatus.BAD_REQUEST;
             case METHOD_NOT_ALLOWED -> HttpStatus.METHOD_NOT_ALLOWED;
             case INTERNAL_ERROR -> HttpStatus.INTERNAL_SERVER_ERROR;
+            case ROLE_ALREADY_EXISTS -> HttpStatus.CONFLICT;
         };
     }
 

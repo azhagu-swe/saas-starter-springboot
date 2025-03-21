@@ -1,5 +1,7 @@
 package com.azhagu_swe.saas.constants;
 
+import com.azhagu_swe.saas.enumeration.ErrorCode;
+
 public class ErrorCodeConstants {
 
     public static final String USERNAME_TAKEN = "USER_002";
@@ -28,4 +30,6 @@ public class ErrorCodeConstants {
     public static final String PERMISSION_UPDATE_ERROR = "PERMISSION_003";
     public static final String PERMISSION_DELETE_ERROR = "PERMISSION_004";
     public static final String METHOD_NOT_ALLOWED = "HTTP405";
+    public static final String ROLE_ALREADY_EXISTS ="ROLE_005";
+    
 }

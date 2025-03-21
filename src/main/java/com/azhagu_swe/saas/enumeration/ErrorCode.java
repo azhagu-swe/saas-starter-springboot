@@ -19,7 +19,8 @@ public enum ErrorCode {
     METHOD_NOT_ALLOWED("HTTP405", "HTTP method not allowed."),
 
     // General/Internal Errors
-    INTERNAL_ERROR("INT500", "An internal server error occurred. Please try again later.");
+    INTERNAL_ERROR("INT500", "An internal server error occurred. Please try again later."), 
+    ROLE_ALREADY_EXISTS("ROLE005", "Role already exists with the provided name.");
 
     private final String code;
     private final String message;
