@@ -130,13 +130,6 @@ public class GlobalExceptionHandler {
         return new ErrorResponse("INVALID_TOKEN", "Invalid or expired token provided.");
     }
 
-    @ExceptionHandler(IllegalArgumentException.class)
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public APIResponse<?> handleIllegalArgumentException(IllegalArgumentException ex, HttpServletRequest request) {
-        logger.warn("Bad request at {}: {}", request.getRequestURI(), ex.getMessage());
-        return APIResponse.error(ex.getMessage(), ErrorCodeConstants.VALIDATION_ERROR);
-    }
-
     @ExceptionHandler(ServiceException.class)
     public ResponseEntity<APIResponse<?>> handleServiceException(ServiceException ex, HttpServletRequest request) {
         logger.error("Service exception at {}: {}", request.getRequestURI(), ex.getMessage(), ex);

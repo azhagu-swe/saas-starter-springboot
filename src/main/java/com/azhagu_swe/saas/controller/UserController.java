@@ -27,7 +27,7 @@ public class UserController {
 
     private final UserService userService;
 
-    @PostMapping
+    @PostMapping("/create")
     @Operation(summary = "Create User", description = "Registers a new user.")
     @ApiResponse(responseCode = "201", description = "User registered successfully", content = @Content(schema = @Schema(implementation = UserResponse.class)))
     public ResponseEntity<APIResponse<UserResponse>> createUser(@Valid @RequestBody CreateUserRequest request) {
@@ -36,7 +36,7 @@ public class UserController {
                 .body(APIResponse.success("User registered successfully", response));
     }
 
-    @GetMapping("/create")
+    @GetMapping
     @Operation(summary = "Get All Users", description = "Retrieves a list of all users.")
     @ApiResponse(responseCode = "200", description = "Users retrieved successfully", content = @Content(schema = @Schema(implementation = UserResponse[].class)))
     public ResponseEntity<APIResponse<List<UserResponse>>> getAllUsers() {
