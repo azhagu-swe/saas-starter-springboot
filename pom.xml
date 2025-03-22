@@ -136,6 +136,13 @@
 			<artifactId>bucket4j-spring-boot-starter</artifactId>
 			<version>0.5.2</version>
 		</dependency>
+		
+		<!-- flywaydb-->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+			<version>9.22.3</version> <!-- Check for latest version -->
+		</dependency>
 
 
 	</dependencies>
